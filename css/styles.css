@@ -1,0 +1,146 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #4D515D;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+.register-box{
+    margin-top: 50px;
+    max-width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/side.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right;
+    border-radius: 5px;
+}
+
+.register-info{
+    background-color: #fff;
+    width: 750px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.register-info-2{
+    padding: 85px 50px 40px;
+}
+
+.register-heading{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.register-description{
+    color: #AAAAAA;
+    margin-top: 0;
+    margin-bottom: 60px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.register-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 80px;
+}
+
+.register-item{
+    border: 1px solid #AAAAAA;
+    border-radius: 3px;
+    transition: border 0.5s ease;
+}
+
+.register-item:hover{
+    border: 1px solid transparent;
+}
+
+.register-link{
+    position: relative;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #8B8B8C;
+    font-weight: 700;
+    transition: box-shadow 0.5s ease,
+    color 0.5s ease;
+}
+
+.register-link:hover{
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.register-item + .register-item{
+    margin-top: 20px;
+}
+
+.register-link::before{
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: block;
+    background-image: url(../img/googleplus.svg);
+}
+
+.facebook::before{
+    background-image: url(../img/facebook.svg);
+}
+
+.twitter::before{
+    background-image: url(../img/twitter.svg);
+}
+
+.divider{
+    border: none;
+    height: 1px;
+    background-color:  #AAAAAA;
+    margin-bottom: 30px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-about{
+    font-weight: 700;
+}
+
+.footer-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: grey;
+    transition: color 0.5s ease;
+}
+
+.footer-link:hover{
+    color: black;
+}
+
+.footer-about,
+.footer-link{
+    padding: 0;
+}
+
+.site-footer{
+    padding: 0px 50px 40px;
+}
